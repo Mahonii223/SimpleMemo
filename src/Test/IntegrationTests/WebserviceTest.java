@@ -81,6 +81,10 @@ public class WebserviceTest {
         } catch ( Exception e) {
             fail(e.getMessage());
         }
+    }
+
+    @Test
+    public void deleteMemoTest(){
 
     }
 

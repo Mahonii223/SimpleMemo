@@ -1,3 +1,5 @@
+
+
 create table memos(
     id          INT unsigned NOT NULL AUTO_INCREMENT,
     title       VARCHAR(150) NOT NULL,
