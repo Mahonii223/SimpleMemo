@@ -1,0 +1,32 @@
+group 'SimpleMemo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'javax.json:javax.json-api:1.0'
+    compile 'mysql:mysql-connector-java:5.1.38'
+    compile 'ch.vorburger.mariaDB4j:mariaDB4j:2.3.0'
+
+    compile "org.slf4j:slf4j-api:1.7.5"
+    compile "org.slf4j:slf4j-log4j12:1.7.5"
+
+    testCompile "org.glassfish:javax.json:1.0.4"
+    testCompile 'javax.json:javax.json-api:1.0'
+    testCompile "org.mockito:mockito-core:1.+"
+    testCompile 'org.glassfish.jersey.core:jersey-common:2.22.2'
+
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    providedCompile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
