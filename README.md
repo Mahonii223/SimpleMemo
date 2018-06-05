@@ -61,3 +61,4 @@ Full list of available services:
 - As the excercise requires, all records in the database store date of creation, which is similar to all records with the same threadID. This creates some redundancy in the stored data, however it greatly simplifies some listing queries.
 - The strings obtained from Json files and passed to database queries are NOT SANITIZED.
 - Authentication and security aspects of the projects were ommited
+- Some queries could probably be replaced by adding views to the database rather then storing queries in database connector
