@@ -30,14 +30,14 @@ The entire app is build with gradle.
 ## Setup
 
 IntelliJ, Eclipse or any other IDE capable of building gradle projects is required to run this project.
-After downloading the repository, and adjustment to the code must be made: in main.webapp.DBConnector.java, DBURL, DBUSER and DBPASS variables must be set to database URL, username and password to allow connection.
+After downloading the repository, an adjustment to the code must be made: in src/main/webapp/DBConnector.java, DBURL, DBUSER and DBPASS variables must be set to database URL, username and password to allow connection.
 In order to setup required "memos" table in the database, setup.sql script can be used, located in src/Test/IntegrationTests.
 Once the database has been set up, gradle can be used to create a .war artifact ready to be deployed on server of your choice, however do note that a server compliant to Java EE spec such as TomEE is required.
 
 
 ## Usage
 
-Once the webapp is running, the followin CURL commands can be used to test it:
+Once the webapp is running, the following CURL commands can be used to test it:
 
 To list all memos:
 ```curl -X GET http://serverurl/memos```
